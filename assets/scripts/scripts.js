@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         viewProjects: "Veja todos os meus",
         labelProjects: "projetos no Github",
         footer: "Vamos trabalhar juntos?",
-        language: "I also speak english"
+        language: "I also speak english",
+        title: "Desenvolvedor Frontend - Diego Novaes"
     }
     const tld = window.location.origin.split('.').pop();
     if (tld === "br") {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resumes.forEach(res => res.innerHTML = portuguese.cv)
         document.querySelector("h3.projects").innerText = portuguese.h3Projects
         document.querySelector("a.projects").innerText = portuguese.projects
+        document.querySelector("a.contact").innerText = portuguese.contact
         document.querySelector(".intro p span").innerText = portuguese.download
         document.querySelector(".projects p span").innerText = portuguese.viewProjects
         document.querySelector(".projects p a").innerText = portuguese.labelProjects
@@ -29,6 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".languageSwitch a").setAttribute("hreflang","en")
         document.querySelector(".languageSwitch a").setAttribute("lang","en")
         document.querySelector(".languageSwitch a").setAttribute("href","https://diegonovaes.com")
-        document.title = "Desenvolvedor Frontend - Diego Novaes"
+        document.title = portuguese.title
     }
 })
