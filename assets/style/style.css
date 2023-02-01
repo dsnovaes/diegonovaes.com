@@ -192,6 +192,7 @@ h3 {
     opacity: 0.1;
     transition: 0.25s all;
     scale: 1.1;
+    filter: grayscale(100%);
 }
 footer {
     text-align: center;
