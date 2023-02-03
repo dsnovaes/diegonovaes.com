@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         h3Subtitle: "Sou um Desenvolvedor Frontend com fortes habilidades em UX design e SEO. Projetei e programei websites usados por milhares de pessoas.",
         h3Projects: "Alguns dos meus projetos",
         cv: "currículo",
+        aboutMe:"Sobre mim",
         projects: "projetos",
         contact: "contato",
         download: "Baixe o meu",
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const resumes = document.querySelectorAll(".resume")
         resumes.forEach(res => res.innerHTML = portuguese.cv)
         document.querySelector("h3.projects").innerText = portuguese.h3Projects
+        document.querySelector("a.about").innerText = portuguese.projects
         document.querySelector("a.projects").innerText = portuguese.projects
         document.querySelector("a.contact").innerText = portuguese.contact
         document.querySelector(".intro p span").innerText = portuguese.download
@@ -33,4 +35,26 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".languageSwitch a").setAttribute("href","https://diegonovaes.com")
         document.title = portuguese.title
     }
+    const aboutLink = document.querySelector(".about")
+    const projectsLink = document.querySelector(".projects")
+    const clientsLink = document.querySelector(".clients")
+    const contactLink = document.querySelector(".contact")
+    aboutLink.addEventListener("click",(e)=>{
+        e.preventDefault();
+        document.getElementById("about").scrollIntoView()
+    })
+    projectsLink.addEventListener("click",(e)=>{
+        e.preventDefault();
+        document.getElementById("projects").scrollIntoView()
+    })
+    clientsLink.addEventListener("click",(e)=>{
+        e.preventDefault();
+        document.getElementById("clients").scrollIntoView()
+    })
+    contactLink.addEventListener("click",(e)=>{
+        e.preventDefault();
+        document.querySelector("footer").scrollIntoView()
+    })
+
+
 })
