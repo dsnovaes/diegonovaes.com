@@ -156,7 +156,7 @@ h3 {
     justify-content: end;
 }
 #skills .columns .highlight strong {
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 900;
     display: block;
 }
@@ -183,7 +183,47 @@ h3 {
 }
 #skills .logos img {
     height: 40px;
-    margin: 0 calc(var(--base-unit)*5) calc(var(--base-unit)*5) 0;
+    margin: 0 calc(var(--base-unit)*3) calc(var(--base-unit)*6) calc(var(--base-unit)*3);
+}
+
+#skills figure {
+    position: relative;
+    display: inline-block;
+}
+
+#skills figure figcaption {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--light-grey);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#skills figure figcaption::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--light-grey) transparent transparent transparent;
+}
+
+#skills figure:hover figcaption {
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -326,6 +366,10 @@ footer a {
     color: white;
     border: 0;
     margin: 0 calc(var(--base-unit)*5);
+}
+footer small {
+    display: block;
+    margin-bottom: calc(var(--base-unit)*5);
 }
 footer .footnote {
     margin-top: 10vw;
