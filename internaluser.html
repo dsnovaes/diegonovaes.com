@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal User Cookie Generator</title>
+    <meta name="robots" content="noindex" />
+
+</head>
+<body>
+
+<script>
+    let myCookie = document.cookie;
+    const cookieAlert = document.querySelector('.cookieAlert')
+    if (myCookie.split("; ").indexOf("internal_user=true") === -1) {
+        document.cookie = `internal_user=true; path=/`;
+        alert("Cookie created")
+    }
+</script>
+    
+</body>
+</html>
