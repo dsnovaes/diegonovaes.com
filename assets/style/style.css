@@ -377,6 +377,9 @@ footer .footnote {
 footer a[class="resume"] {
     text-transform: capitalize;
 }
+footer li {
+    display: inline;
+}
 
 p strong {
     font-weight: bold;
@@ -384,9 +387,12 @@ p strong {
 }
 
 @media screen and (max-width: 900px) {
-
+    body {
+        padding: 0;
+    }
     .container {
         padding: calc(var(--base-unit)*10);
+        border-radius: 0;
     }
     #projects .thumbnails {
         display: grid;
@@ -398,6 +404,11 @@ p strong {
     }
     #projects .thumbnails .project ul {
         display: flex;
+        transform: scale(1);
+    }
+    .project li {
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
     }
     #projects .thumbnails .project ul li a {
         display: block;
@@ -411,16 +422,37 @@ p strong {
     #clients .grid {
         grid-template-columns: 1fr 1fr;
     }
+    #skills .vertical {
+        flex: auto;
+    }
+    #skills .highlight {
+        margin-bottom: calc(var(--base-unit)*10);
+    }
+    footer li {
+        display: block;
+        margin-bottom: calc(var(--base-unit)*5);
+    }
     nav {
         display: none;
     }
     header a.contact {
-        padding: calc(var(--base-unit)*5);
+        padding: calc(var(--base-unit)*4);
+        text-align: center;
+    }
+    h1 {
+        padding-left: calc(var(--base-unit)*4);
     }
     h2 {
         font-size: 50px;
     }
     h3 {
         font-size: 24px;
+    }
+    .languageSwitch {
+        margin-bottom: 0;
+        display: flex;
+    }
+    .languageSwitch a {
+        width: 100%;
     }
 }
