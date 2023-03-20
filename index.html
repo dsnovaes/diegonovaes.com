@@ -35,13 +35,13 @@
     <link rel="shortcut icon" href="./assets/d.ico" />
     <script src="./assets/scripts/scripts.js"></script>
 </head>
-<body>
+<body class="bottomPadding">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDTNWWT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="languageSwitch">
-        <a href="https://diegonovaes.com.br" hreflang="pt-BR" lang="pt-BR">Eu também falo português</a>
+        <a href="https://diegonovaes.com.br" hreflang="pt-BR" lang="pt-BR" data-link="language">Eu também falo português</a>
     </div>
     <div class="container">
         <div class="innerContainer">
@@ -54,18 +54,18 @@
                 </span>
                 <nav>
                     <ul>
-                        <li><a class="about">About me</a></li>
-                        <li><a class="projects">Projects</a></li>
-                        <li><a class="clients">Clients</a></li>
+                        <li><a class="about" data-link="menu">About me</a></li>
+                        <li><a class="projects" data-link="menu">Projects</a></li>
+                        <li><a class="clients" data-link="menu">Clients</a></li>
                     </ul>
                 </nav>
-                <a class="contact">Let's chat</a>
+                <a class="contact" data-link="menu">Let's chat</a>
             </header>
             <main>
                 <section id="intro">
                     <h2>Hi, I'm Diego 👋🏻</h2>
                     <h3>I'm a Frontend Developer with strong UX design and SEO skills. I've designed and developed websites used by thousands of people.</h3>
-                    <p><span>Download my</span> <a href="/assets/Diego_Novaes-Resume.pdf" class="resume">resume</a></p>
+                    <p><span>Download my</span> <a href="/assets/Diego_Novaes-Resume.pdf" class="resume" data-link="about">resume</a></p>
                 </section>
                 <section id="about">
                     <h3 class="about">About me</h3>
@@ -121,7 +121,7 @@
                                 </figure>
                             </div>
                             <h4>Frontend Developer</h4>
-                            <p>I work with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Javascript</strong> daily. In only twelve days I created an <a href="https://github.com/dsnovaes/bubble-gram" title="Repo link">Instagram clone</a> using <strong>Rails</strong> on the backend and <strong>React</strong>, <strong>React Hooks</strong>, and <strong>Redux</strong> on the frontend.</p>
+                            <p>I work with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Javascript</strong> daily. In only twelve days I created an <a href="https://github.com/dsnovaes/bubble-gram" title="Repo link" data-link="about">Instagram clone</a> using <strong>Rails</strong> on the backend and <strong>React</strong>, <strong>React Hooks</strong>, and <strong>Redux</strong> on the frontend.</p>
                         </div>
                         <div class="vertical designer">
                             <div class="logos">
@@ -157,131 +157,134 @@
                         <div class="project">
                             <h4>Libra</h4>
                             <ul>
-                                <li><a href="https://dsnovaes.github.io/libra/">Live link</a></li>
-                                <li><a href="https://github.com/dsnovaes/libra">Repo link</a></li>
+                                <li><a href="https://dsnovaes.github.io/libra/" data-link="projects-live">Live link</a></li>
+                                <li><a href="https://github.com/dsnovaes/libra" data-link="projects-repo">Repo link</a></li>
                             </ul>
                             <img src="./assets/images/libra.png" alt="Libra Screenshot" loading="lazy" />
                         </div>
                         <div class="project">
                             <h4>Bubblegram</h4>
                             <ul>
-                                <li><a href="https://bubblegram.onrender.com/">Live link</a></li>
-                                <li><a href="https://github.com/dsnovaes/bubble-gram">Repo link</a></li>
+                                <li><a href="https://bubblegram.onrender.com/" data-link="projects-live">Live link</a></li>
+                                <li><a href="https://github.com/dsnovaes/bubble-gram" data-link="projects-repo">Repo link</a></li>
                             </ul>
                             <img src="./assets/images/bubblegram.png" alt="Bubblegram Screenshot" loading="lazy" />
                         </div>
                         <div class="project">
                             <h4>Friendly</h4>
                             <ul>
-                                <li><a href="https://friend-ly.onrender.com">Live link</a></li>
-                                <li><a href="https://github.com/matthewgoodbar/friend.ly">Repo link</a></li>
+                                <li><a href="https://friend-ly.onrender.com" data-link="projects-live">Live link</a></li>
+                                <li><a href="https://github.com/matthewgoodbar/friend.ly" data-link="projects-repo">Repo link</a></li>
                             </ul>
                             <img src="./assets/images/friendly.jpg" alt="Friendly Screenshot" loading="lazy" />
                         </div>
                         <div class="project">
                             <h4>Grupo ISM</h4>
                             <ul>
-                                <li><a href="https://grupoism.com.br">Live link</a></li>
-                                <li><a href="https://github.com/dsnovaes/ism-brasil">Repo link</a></li>
+                                <li><a href="https://grupoism.com.br" data-link="projects-live">Live link</a></li>
+                                <li><a href="https://github.com/dsnovaes/ism-brasil" data-link="projects-repo">Repo link</a></li>
                             </ul>
                             <img src="./assets/images/ism.png" alt="Grupo ISM Screenshot" loading="lazy" />
                         </div>
                         <div class="project">
                             <h4>Educa Mais Brasil 2020</h4>
                             <ul>
-                                <li><a href="https://educamaisbrasil2020.com.br">Live link</a></li>
+                                <li><a href="https://educamaisbrasil2020.com.br" data-link="projects-live">Live link</a></li>
                             </ul>
                             <img src="./assets/images/educa2020.png" alt="Educa Mais Brasil 2020 Screenshot" loading="lazy" />
                         </div>
                         <div class="project">
                             <h4>Água Lôa</h4>
                             <ul>
-                                <li><a href="https://agualoa.com.br">Live link</a></li>
+                                <li><a href="https://agualoa.com.br" data-link="projects-live">Live link</a></li>
                             </ul>
                             <img src="./assets/images/agualoa.png" alt="Água Lôa Screenshot" loading="lazy" />
                         </div>
                         <div class="project">
                             <h4>Drink-t</h4>
                             <ul>
-                                <li><a href="https://drinkt.com.br">Live link</a></li>
+                                <li><a href="https://drinkt.com.br" data-link="projects-live">Live link</a></li>
                             </ul>
                             <img src="./assets/images/drinkt.png" alt="Drink-t Screenshot" loading="lazy" />
                         </div>
                         <div class="project">
                             <h4>EnerUp</h4>
                             <ul>
-                                <li><a href="https://enerup.com.br">Live link</a></li>
+                                <li><a href="https://enerup.com.br" data-link="projects-live">Live link</a></li>
                             </ul>
                             <img src="./assets/images/enerup.png" alt="EnerUp Screenshot" loading="lazy" />
                         </div>
                     </div>
-                    <p><span>View all of my</span> <a href="https://github.com/dsnovaes">projects on Github</a></p>
+                    <p><span>View all of my</span> <a href="https://github.com/dsnovaes" data-link="projects-github">projects on Github</a></p>
                 </section>
                 <section id="clients">
                     <h3>Brands I have worked with/for</h3>
                     <div class="grid">
                         <figure>
                             <img src="./assets/images/samsung-logo.png" alt="Logo Samsung" loading="lazy" />
-                            <p><a href="https://www.samsung.com.br/" rel="nofollow noopener" target="_blank">Samsung</a> • <span class="eletronics">Eletronics</span></p>
+                            <p><a href="https://www.samsung.com.br/" rel="nofollow noopener" target="_blank" data-link="clients">Samsung</a> • <span class="eletronics">Eletronics</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/vivo-logo.gif" alt="Logo VIVO" loading="lazy" />
-                            <p><a href="https://www.vivo.com.br/" rel="nofollow noopener" target="_blank">Vivo</a> • <span class="telecom">Telecom</span></p>
+                            <p><a href="https://www.vivo.com.br/" rel="nofollow noopener" target="_blank" data-link="clients">Vivo</a> • <span class="telecom">Telecom</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/ambev-logo.png" alt="Logo AMBEV" loading="lazy" />
-                            <p><a href="https://www.ambev.com.br/" rel="nofollow noopener" target="_blank">Ambev</a> • <span class="beverage">Beverage</span></p>
+                            <p><a href="https://www.ambev.com.br/" rel="nofollow noopener" target="_blank" data-link="clients">Ambev</a> • <span class="beverage">Beverage</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/gertec-logo.png" alt="Logo Gertec" loading="lazy" />
-                            <p><a href="https://www.gertec.com.br/" rel="nofollow noopener" target="_blank">Gertec</a> • <span class="eletronics">Eletronics</span></p>
+                            <p><a href="https://www.gertec.com.br/" rel="nofollow noopener" target="_blank" data-link="clients">Gertec</a> • <span class="eletronics">Eletronics</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/educa-mais-brasil-logo.png" alt="Logo Educa Mais Brasil" loading="lazy" />
-                            <p><a href="https://educamaisbrasil.com.br/" rel="nofollow noopener" target="_blank">Educa Mais Brasil</a> • <span class="education">Education</span></p>
+                            <p><a href="https://educamaisbrasil.com.br/" rel="nofollow noopener" target="_blank" data-link="clients">Educa Mais Brasil</a> • <span class="education">Education</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/uniftc-logo.gif" alt="Logo UNIFTC" loading="lazy" />
-                            <p><a href="https://uniftc.edu.br/" rel="nofollow noopener" target="_blank">UNIFTC</a> • <span class="education">Education</span></p>
+                            <p><a href="https://uniftc.edu.br/" rel="nofollow noopener" target="_blank" data-link="clients">UNIFTC</a> • <span class="education">Education</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/unex-logo.gif" alt="Logo UNEX" loading="lazy" />
-                            <p><a href="https://unex.edu.br/" rel="nofollow noopener" target="_blank">UNEX</a> • <span class="education">Education</span></p>
+                            <p><a href="https://unex.edu.br/" rel="nofollow noopener" target="_blank" data-link="clients">UNEX</a> • <span class="education">Education</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/unifacs-logo.gif" alt="Logo UNIFACS" loading="lazy" />
-                            <p><a href="https://unifacs.br/" rel="nofollow noopener" target="_blank">UNIFACS</a> • <span class="education">Education</span></p>
+                            <p><a href="https://unifacs.br/" rel="nofollow noopener" target="_blank" data-link="clients">UNIFACS</a> • <span class="education">Education</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/governo-ba-logo.png" alt="Logo Governo da Bahia" loading="lazy" />
-                            <p><a href="https://www.bahia.ba.gov.br/" rel="nofollow noopener" target="_blank">Governo da Bahia</a> • <span class="gov">Government</span></p>
+                            <p><a href="https://www.bahia.ba.gov.br/" rel="nofollow noopener" target="_blank" data-link="clients">Governo da Bahia</a> • <span class="gov">Government</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/ism-logo.gif" alt="Logo Grupo ISM" loading="lazy" />
-                            <p><a href="https://grupoism.com.br/" rel="nofollow noopener" target="_blank">ISM</a> • <span class="beverage">Beverage</span></p>
+                            <p><a href="https://grupoism.com.br/" rel="nofollow noopener" target="_blank" data-link="clients">ISM</a> • <span class="beverage">Beverage</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/lar-harmonia-logo.gif" alt="Logo Fundação Lar Harmonia" loading="lazy" />
-                            <p><a href="https://larharmonia.org.br/" rel="nofollow noopener" target="_blank">Fundação Lar Harmonia</a> • <span class="non-profit">Non-profit</span></p>
+                            <p><a href="https://larharmonia.org.br/" rel="nofollow noopener" target="_blank" data-link="clients">Fundação Lar Harmonia</a> • <span class="non-profit">Non-profit</span></p>
                         </figure>
                         <figure>
                             <img src="./assets/images/guaibim-logo.jpg" alt="Logo Lojas Guaibim" loading="lazy" />
-                            <p><a href="https://lojasguaibim.com.br/" rel="nofollow noopener" target="_blank">Lojas Guaibim</a> • <span class="retail">Retail</span></p>
+                            <p><a href="https://lojasguaibim.com.br/" rel="nofollow noopener" target="_blank" data-link="clients">Lojas Guaibim</a> • <span class="retail">Retail</span></p>
                         </figure>
                     </div>
                 </section>
             </main>
         </div>
     </div>
+    <div class="cookieConsent" style="display:none">
+        <p><span>As a data-driven person I use Google Analytics to understand how visitors use my portfolio and I use that data to improve it. I do not and will not use that data for any other purposes.</span> <button>I understand and agree</button></p>
+    </div>
     <footer id="contact">
         <div class="innerContainer">
             <h3>Ready to work with me?</h3>
             <ul>
-                <li><a href="mailto:dsnovaes1@gmail.com" rel="nofollow noopener" target="_blank">Email</a></li>
-                <li><a href="./assets/Diego_Novaes-Resume.pdf" class="resume">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/diegonovaes/" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-                <li><a href="https://angel.co/u/diego-novaes" rel="nofollow noopener" target="_blank">wellfound/AngelList</a></li>
-                <li><a href="https://github.com/dsnovaes" rel="nofollow noopener" target="_blank">Github</a></li>
+                <li><a href="mailto:dsnovaes1@gmail.com" rel="nofollow noopener" target="_blank" data-link="footer">Email</a></li>
+                <li><a href="./assets/Diego_Novaes-Resume.pdf" class="resume" data-link="footer">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/diegonovaes/" rel="nofollow noopener" target="_blank" data-link="footer">LinkedIn</a></li>
+                <li><a href="https://wellfound.com/u/diego-novaes" rel="nofollow noopener" target="_blank" data-link="footer">wellfound/AngelList</a></li>
+                <li><a href="https://github.com/dsnovaes" rel="nofollow noopener" target="_blank" data-link="footer">Github</a></li>
             </ul>
             <p class="footnote"><small>2023</small>Diego Novaes - Frontend Developer</p>
         </div>

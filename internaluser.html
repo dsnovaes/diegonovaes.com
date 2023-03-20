@@ -16,6 +16,8 @@
     if (myCookie.split("; ").indexOf("internal_user=true") === -1) {
         document.cookie = `internal_user=true; path=/`;
         alert("Cookie created")
+    } else {
+        alert("Cookie exists. Nothing created.")
     }
 </script>
     

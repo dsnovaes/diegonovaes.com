@@ -1,5 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+
+    let myCookie = document.cookie;
+    const consentAlert = document.querySelector(".cookieConsent")
+    if (myCookie.split("; ").indexOf("cookie_consent=true") === -1) {
+        consentAlert.style.display = "block";
+    } else {
+        document.querySelector("body").removeAttribute("class")
+    }
+
+    const btnConsent = document.querySelector(".cookieConsent button")
+    btnConsent.addEventListener("click",() => {
+        document.querySelector("body").removeAttribute("class")
+        document.cookie = `cookie_consent=true; path=/`;
+        consentAlert.style.display = "none";
+        dataLayer.push({
+            "event": "agreed_to_be_tracked"
+        })
+    })
+
     const aboutLink = document.querySelector("a.about")
     const projectsLink = document.querySelector("a.projects")
     const clientsLink = document.querySelector("a.clients")
@@ -48,7 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
         labelProjects: "projetos no Github",
         footer: "Vamos trabalhar juntos?",
         language: "I also speak english",
-        title: "Desenvolvedor Frontend - Diego Novaes"
+        title: "Desenvolvedor Frontend - Diego Novaes",
+        cookieConsent: "Como uma pessoa orientada a dados eu uso Google Analytics para entender como os visitantes usam o meu portfolio. Seus dados não são e não serão utilizados para nenhuma outra finalidade.",
+        btnConsent: "Eu entendo e concordo"
     }
 
     const tld = window.location.origin.split('.').pop();
@@ -79,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#intro p span").innerText = portuguese.download
         document.querySelector("#projects p span").innerText = portuguese.viewProjects
         document.querySelector("#projects p a").innerText = portuguese.labelProjects
+        document.querySelector(".cookieConsent span").innerText = portuguese.cookieConsent
+        document.querySelector(".cookieConsent button").innerText = portuguese.btnConsent
         document.querySelector("footer h3").innerText = portuguese.footer
         document.querySelector("html").setAttribute("lang", "pt-BR")
         document.querySelector(".languageSwitch a").innerText = portuguese.language
