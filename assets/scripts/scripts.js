@@ -111,4 +111,45 @@ document.addEventListener("DOMContentLoaded", () => {
         document.title = portuguese.title
     }
 
+    // filter feature
+    let filters = []
+    const projects = document.querySelectorAll(".project")
+    let filtersBtns = document.querySelectorAll(".filters button")
+    filtersBtns.forEach(btn => {
+        btn.addEventListener("click",()=>{
+            if (btn.getAttribute("class") == "active") {
+                btn.classList.remove("active")
+                let i = filters.indexOf(btn.innerHTML)
+                filters.splice(i,1)
+            } else {
+                btn.classList.add("active")
+                filters.push(btn.innerHTML)
+            }
+            filterProjects()
+        })
+    })
+    function filterProjects() {
+        if (filters.length > 0) {
+            for (let project of projects) { 
+                let dataFilters = project.getAttribute("data-filters")
+                if (!filters.every(e => dataFilters.includes(e))) {
+                    project.style.display = "none"
+                } else {
+                    project.style.display = "flex"
+                }
+            }
+            let titleNotFound = document.querySelector(".filters h3")
+            if (titleNotFound) titleNotFound.remove();
+            if (!Object.values(projects).some(e => e.style.display === "flex")) 
+            {
+                let filters = document.querySelector(".filters")
+                let titleNotFound = document.createElement("h3")
+                titleNotFound.innerHTML = "No projects found with those filters"
+                filters.appendChild(titleNotFound)
+            }
+        } else {
+            for (let project of projects) { project.removeAttribute("style") }
+        }
+
+    }
 })

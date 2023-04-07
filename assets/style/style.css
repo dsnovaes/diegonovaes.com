@@ -284,8 +284,11 @@ h3 {
     border-color: var(--blue);
 }
 #projects .filters {
-    display: none;
     margin-bottom: calc(var(--base-unit)*10);
+}
+#projects .filters button.active {
+    background-color: var(--red);
+    color: white;
 }
 #projects .thumbnails {
     display: grid;
@@ -356,6 +359,10 @@ h3 {
     transition: 0.25s all;
     scale: 1.1;
     filter: grayscale(100%);
+}
+.filters h3 {
+    color: var(--red);
+    text-align: center;
 }
 footer {
     text-align: center;
