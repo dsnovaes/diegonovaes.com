@@ -286,6 +286,15 @@ h3 {
 #projects .filters {
     margin-bottom: calc(var(--base-unit)*10);
 }
+#projects .filters button {
+    background:transparent;
+    font-weight: bold;
+    border: 2px solid var(--transparent-black-ligther);
+}
+#projects .filters button:hover {
+    background:var(--blue);
+    color: #fff;
+}
 #projects .filters button.active {
     background-color: var(--red);
     color: white;
