@@ -129,7 +129,6 @@ h3 {
     font-size: 38px;
     line-height: 1.25;
     margin: calc(var(--base-unit)*10) 0;
-    /* column-span: all; */
 }
 #about .textContent {
     column-count: 2;
